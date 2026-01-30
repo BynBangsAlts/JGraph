@@ -4,12 +4,17 @@ import java.util.*;
 
 public class JGraph {
 
-    public static Map<String, List<String>> graph = new HashMap<>();
+    public static Map<String, List<String>> graph;
 
     private static boolean yes;
 
+    /**
+    * Constructor
+    * @params dups Do you want to allow dups
+    */
     public JGraph(boolean dups) {
         this.yes = dups;
+        this.graph = new HashMap<>();
     }
 
     /**
