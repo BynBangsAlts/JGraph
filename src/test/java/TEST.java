@@ -10,5 +10,8 @@ public class TEST {
         Edge.addEdge("A", "B");
         Edge.addEdge("C", "B");
         System.out.println(JGraph.getMap());
+        JGraph a = new JGraph(true);
+        Edge.addEdge("A", "C");
+        System.out.println(JGraph.getMap());
     }
 }
