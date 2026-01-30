@@ -14,11 +14,6 @@ public class Node {
      * @param node
      */
     public static void addNode(String node) {
-        List<String> nodes = JGraph.getMap().putIfAbsent(node, new ArrayList<>());
-        if (String.valueOf(JGraph.getYes()).equals(node)) {
-            if (!nodes.contains(node)) {
-                nodes.add(node);
-            }
-        }
+        JGraph.getMap().putIfAbsent(node, new ArrayList<>());
     }
 }
