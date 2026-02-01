@@ -1,0 +1,9 @@
+package org.JGraph.dot;
+
+public interface DotInterface {
+
+    /**
+     * Ye
+     */
+    void export();
+}
